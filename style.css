@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     background: #ffeedd;
     padding: 20px;
@@ -52,13 +52,29 @@ footer {
     color: #888;
 }
 
-/* 🔥 Mobile responsiveness */
+section {
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Mobile responsiveness */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.4em;
     }
 
-    p {
+    p, section p {
         font-size: 1em;
     }
 
@@ -66,4 +82,21 @@ footer {
         font-size: 1em;
         width: 90%;
     }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    footer a {
+        color: #aa7744;
+        text-decoration: none;
+        margin: 0 5px;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        color: #ff8c42;
+        text-decoration: underline;
+    }
+
 }
