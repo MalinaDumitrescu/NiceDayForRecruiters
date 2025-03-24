@@ -2,28 +2,32 @@ body {
     background: #fff7f0;
     font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     color: #333;
+    margin: 0;
 }
 
 .container {
     max-width: 500px;
     margin: 0 auto;
     background: #ffeedd;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 15px #ccc;
+    box-sizing: border-box;
 }
 
 button {
-    padding: 15px 30px;
+    padding: 15px 25px;
     font-size: 1.1em;
     background-color: #ffb347;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px 5px;
     transition: transform 0.2s ease-in-out;
+    width: 80%;
+    max-width: 300px;
 }
 
 button:hover {
@@ -32,7 +36,8 @@ button:hover {
 }
 
 .animal {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     margin-top: 20px;
     transition: 0.3s ease;
 }
@@ -45,4 +50,20 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
     color: #888;
+}
+
+/* 🔥 Mobile responsiveness */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        width: 90%;
+    }
 }
