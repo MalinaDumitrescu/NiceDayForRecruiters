@@ -17,21 +17,28 @@ body {
 
 button {
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background-color: #ffb347;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #ffa07a;
+    transform: scale(1.05);
 }
 
 .animal {
     width: 200px;
     margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.animal:hover {
+    transform: rotate(3deg) scale(1.05);
 }
 
 footer {

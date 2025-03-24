@@ -1,12 +1,17 @@
 const compliments = [
     "You're doing amazing!",
     "You deserve a cupcake 🧁",
+    "Your curiosity is inspiring!",
     "Great attention to detail!",
-    "Capybaras would be proud of you.",
-    "Your curiosity is inspiring!"
+    "You have capybara-level calm. Respect."
 ];
 
 document.getElementById('clickMeBtn').addEventListener('click', () => {
-    const random = Math.floor(Math.random() * compliments.length);
-    document.getElementById('compliment').innerText = compliments[random];
+    const compliment = compliments[Math.floor(Math.random() * compliments.length)];
+    document.getElementById('compliment').innerText = compliment;
+    confetti(); // 🎉
+});
+
+document.getElementById('surpriseBtn').addEventListener('click', () => {
+    alert("You’ve been virtually hugged by a capybara 🧸");
 });
